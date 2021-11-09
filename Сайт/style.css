@@ -1,0 +1,528 @@
+* {
+  box-sizing: border-box;
+}
+
+/*Бренды*/
+.block { 
+  display: flex;
+  margin-bottom: 10px;
+  align-items: center;
+}
+
+.block p {
+  margin-left: 20px;
+  font-size: 30px;
+}
+
+h1 {
+  color: orange;
+  font-size: 24px;
+  font-weight: lighter;
+  text-align: center;
+}
+
+h2 {
+  color: #39c6b9;
+  font-size: 24px;
+  font-weight: lighter;
+}
+
+/*Меню*/
+.top-menu {
+  position: relative;
+  background: rgba(34,34,34,.2);
+}
+.menu-main {
+  background-image: url('https://mobimg.b-cdn.net/v3/fetch/fb/fbd549d62ef367e417dbf02910d8d6b6.jpeg');
+  background-size: 100%;
+  list-style: none;
+  min-width: 640px;
+  margin: 0;
+  padding: 0;
+}
+
+.menu-main_2::after,
+.menu-main:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.bottom-item {
+  float: bottom;
+  font-size: 30px;
+}
+
+.menu-main_2 {
+  background-image: url('https://mobimg.b-cdn.net/v3/fetch/fb/fbd549d62ef367e417dbf02910d8d6b6.jpeg');
+  list-style: none;
+  background-size: 100%;
+  min-width: 640px;
+  margin: 0;
+  padding: 0;
+}
+
+.menu-main_2 a:hover:not(.name) {background: rgba(0,0,0,.3);}
+@media (max-width: 830px) {
+.menu-main_2 {
+  padding-top: 90px;
+  text-align: center;
+}
+
+.menu-main_2 li {
+  float: none;
+  display: inline-block;
+}
+
+.menu-main_2 a {
+  line-height: normal;
+  padding: 20px 15px;
+  font-size: 16px;
+}
+}
+
+@media (max-width: 630px) {
+  .menu-main_2 li {display: block;}
+  }
+
+.left-item {float: left;}
+.right-item {float: right;}
+.navbar-logo {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.menu-main_2 .name,
+.menu-main .name {
+  text-decoration: none;
+  display: block;
+  line-height: 80px;
+  padding: 0 20px;
+  font-size: 30px;
+  letter-spacing: 2px;
+  font-family: 'Arimo', sans-serif;
+  font-weight: bold;
+  color: orange;
+  transition: .3s linear;
+}
+
+.menu-main_2 a,
+.menu-main a {
+  text-decoration: none;
+  display: block;
+  line-height: 80px;
+  padding: 0 20px;
+  font-size: 18px;
+  letter-spacing: 2px;
+  font-family: 'Arimo', sans-serif;
+  font-weight: bold;
+  color: white;
+  transition: .3s linear;
+}
+
+.menu-main a:hover:not(.name) {background: rgba(0,0,0,.3);}
+@media (max-width: 830px) {
+.menu-main {
+  padding-top: 90px;
+  text-align: center;
+}
+
+.navbar-logo {
+  position: absolute;
+  left: 50%;
+  top: 10px;
+  transform: translateX(-50%);
+}
+
+.menu-main li {
+  float: none;
+  display: inline-block;
+}
+
+.menu-main a {
+  line-height: normal;
+  padding: 20px 15px;
+  font-size: 16px;
+}
+}
+
+@media (max-width: 630px) {
+.menu-main li {display: block;}
+}
+
+/*Игры*/
+/*Главное*/
+.container {
+    width:90%;
+    margin: auto;
+}
+
+/*Игры*/
+input[type="radio"] {
+    display:none;
+}
+
+label {
+     width:23%;
+    float:left;
+    text-align:center;
+    background:#ffffff;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    color:#222222;
+    padding:0.5%;
+    margin:0.5%;
+    margin-bottom:30px;
+    cursor:pointer;
+}
+
+input[type="radio"][id="blue"]:checked + label {
+    background:#6666ff;
+}
+
+input[type="radio"][id="blue"]:checked ~ .red, input[type="radio"][id="blue"]:checked ~ .green {
+    width:0;
+    height:0;
+    padding:0;
+    margin:0;
+    opacity:0;
+}
+
+input[type="radio"][id="red"]:checked + label {
+    background:#ff4466;
+}
+
+input[type="radio"][id="red"]:checked ~ .blue, input[type="radio"][id="red"]:checked ~ .green {
+    width:0;
+    height:0;
+    padding:0;
+    margin:0;
+    opacity:0;
+}
+
+input[type="radio"][id="green"]:checked + label {
+    background:#66dd99;
+}
+
+input[type="radio"][id="green"]:checked ~ .blue, input[type="radio"][id="green"]:checked ~ .red {
+    width:0;
+    height:0;
+    padding:0;
+    margin:0;
+    opacity:0;
+}
+  
+.tile {
+    width:23%;
+    height:100px;
+    float:left;
+    transition:all 1s;
+    margin:0.5%;
+    padding:0.5%;
+}
+.green {
+    background:#66dd99;
+}
+.blue {
+    background:#6666ff;
+}
+.red {
+    background:#ff4466;
+}
+
+/*Главное*/
+.page-header-text {
+  color: black;
+  display: flex;
+  margin: 0;
+  font-family: "Verdana", "Tahoma", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.header-logo img {
+    float: right;
+    margin: 30px;
+    width: 205px;
+    height: 205px;
+}
+
+.page-header {
+  background-image: url("https://i.sunhome.ru/journal/170/interesnie-fakti-o-snege.4211.orig.jpg");
+  background-size: 100%;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+.page-header .container {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 290px 212px;
+}
+
+.page-header a {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.page-title {
+  color:orange;
+  margin: 0;
+  margin-bottom: 4px;
+  padding: 0;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 48px;
+}
+
+/*Фон игр*/
+.fon { 	
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-image: url('img/Cold.jpg')
+}
+
+/*Фон брендов*/
+.fon_2 {
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-image: url('https://phonoteka.org/uploads/posts/2021-06/1623705642_2-phonoteka_org-p-ogon-i-voda-abstraktsiya-oboi-krasivo-2.jpg')
+}
+
+/*Игры*/
+.game {
+  margin-top: 30px;
+  font-size: 70px;
+  color: orange;
+}
+
+/*Тело сайта*/
+.page {
+  display: flex;
+  flex-direction: column;
+  min-width: 640px;
+  min-height: 100vh;
+  margin: 0;
+  font-family: "Verdana", "Tahoma", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.section-title {
+  width: 100%;
+  margin: 0;
+  margin-bottom: 20px;
+  padding: 0;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+/*Цвет текста*/
+p {
+  color: orange;
+}
+
+ol {
+  color:tomato;
+}
+
+.text {
+  color: orange;
+}
+
+a {
+  color: gold;
+}
+
+a:focus {
+  outline-color: #b6aaff;
+}
+
+/*Техподдержка*/
+.about {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 32px;
+}
+
+.about-image {
+   width: 147px;
+   height: 147px;
+   border-radius: 50%;
+}
+
+.about-content {
+   width: 410px;
+   font-size: 14px;
+   line-height: 24px;
+}
+
+.about-content p {
+   margin: 0;
+   margin-bottom: 12px;
+   padding: 0;
+}
+
+.status {
+  margin-bottom: 32px;
+}
+
+.status p {
+  margin: 0;
+  padding-top: 12px;
+  padding-right: 32px;
+  padding-bottom: 16px;
+  padding-left: 32px;
+  border-radius: 32px 0;
+  font-size: 16px;
+  line-height: 24px;
+  font-style: italic;
+  color: #333333;
+  background-color: #ffffff;
+}
+
+.contacts {
+  margin-bottom: 82px;
+}
+
+.contacts img {
+  width: 146px;
+  height: 146px;
+  margin-right: 24px;
+}
+
+.contacts p {
+  margin: 0;
+  margin-bottom: 12px;
+  padding: 0;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+p.contacts-name {
+  margin-top: 20px;
+  margin-bottom: 16px;
+  font-weight: bold;
+  line-height: 20px;
+}
+
+.contacts a {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.content {
+  width: 800px;
+  margin: 20px auto;
+  z-index: 20;
+  font: normal normal 14px/20px Arial, Georgia, "Times New Roman", Times, serif;
+}
+
+.clr {
+  clear: both;
+}
+
+.post {
+  background: #F5F5F5;
+  width: 100%;
+  padding: 20px;
+  float: left;
+}
+
+.description {
+  color: #252736;
+  font-family: Calibri Light;
+  font-size: 16px;
+  line-height: 18px;
+  margin-top: 10px;
+}
+
+#inline {
+margin-left: 30px;
+    width: 80%;
+    margin: 0 auto;
+    background: #fff;
+    padding: 10px 20px;
+}
+.txt { 
+    display: inline-block;
+    color: #676767;
+    width: 190px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    padding: 5px 9px;
+    font-size: 15px!important;
+    line-height: 1.4em;
+}
+
+.txtarea { 
+    display: inline-block;
+    color: #676767;
+    width: 617px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    padding: 5px 9px;
+    font-size: 15px!important;
+    line-height: 1.4em;
+    height: 80px;
+}
+
+.txt:focus, .txtarea:focus {
+ border-style: solid; 
+ border-color: #bababa; 
+ color: #444; 
+ }
+
+input.error, textarea.error { 
+    border-color: #973d3d; 
+    border-style: solid; 
+    background: #f0bebe; 
+    color: #a35959; 
+}
+
+input.error:focus, textarea.error:focus { 
+    border-color: #973d3d; 
+    color: #a35959;
+}
+
+#send { 
+    color: #FFFFFF;
+    display: block;
+    cursor: pointer;
+    padding: 5px 11px;
+    font-size: 1.2em;
+    border: solid 1px #F9F9F9;
+    border-radius: 2px;
+    background: #70C6B9;
+    width: 210px;
+    margin-bottom: 20px;
+}
+
+#send:hover {
+    background: #979797;
+}
+
+/*Подвал*/
+.page-footer {
+  background-size: 100%;
+  margin-top: auto;
+  background-image: url('https://phonoteka.org/uploads/posts/2021-03/1616620084_22-p-trava-fon-28.jpg');
+}
+
+.page-footer .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 12px;
+  padding-bottom: 14px;
+}
+
+.page-footer p {
+  color:turquoise;
+  margin: 0;
+  padding: 0;
+}
