@@ -2,6 +2,7 @@
   box-sizing: border-box;
 }
 
+/*Картина*/
 .center {
   text-align: center;
 }
@@ -24,6 +25,7 @@ h2 {
   font-weight: lighter;
 }
 
+/*Кнопка возвращения и название игры*/
 .top-menu {
   position: relative;
   background: rgba(34,34,34,.2);
@@ -150,8 +152,9 @@ h2 {
 
 h1 {
     text-align:center;
-  }
+}
 
+/*Страница*/
 .container {
     width:90%;
     margin: auto;
@@ -181,16 +184,7 @@ h1 {
   color: red;
 }
 
-.section-title {
-  width: 100%;
-  margin: 0;
-  margin-bottom: 20px;
-  padding: 0;
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 24px;
-}
-
+/*Описание игры*/
 p {
   padding: 10px;
 }
@@ -220,6 +214,7 @@ p {
   margin-top: 10px;
 }
 
+/*Подвал*/
 .page-footer {
   background-size: 100%;
   margin-top: auto;
